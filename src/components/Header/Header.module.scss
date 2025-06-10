@@ -1,10 +1,14 @@
 .header {
-    
+
+    background-color: red;
     display: flex;
     justify-content: center;
-    width: 100%;
-    background-color: red;
 
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
     .profilePicture {
         width: 10em;
@@ -15,6 +19,12 @@
         background-clip: content-box, border-box;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
         object-fit: cover;
+    }
+
+    .nameSection {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
     }
 }
 
