@@ -1,7 +1,8 @@
 .header {
 
-    background-color: red;
+    background-color: #0F0F0F;
     display: flex;
+    gap: 1em;
     justify-content: center;
 
     padding-top: 1em;
@@ -11,8 +12,8 @@
     width: 100%;
 
     .profilePicture {
-        width: 10em;
-        height: 10em;
+        width: 12em;
+        height: 12em;
         border-radius: 50%; 
         border: 0.5em solid white;
         background-origin: border-box;
@@ -23,8 +24,26 @@
 
     .nameSection {
         display: flex;
-        align-content: center;
+        justify-content: center;
         flex-direction: column;
+
+        p {
+            margin: 0;
+        }
+
+        .name {
+            background: linear-gradient(135deg,rgba(27, 205, 250, 1) 10%, rgba(28, 66, 250, 1) 50%, rgba(135, 27, 250, 1) 70%);;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 4.5em;
+            font-weight: 800;
+        }
+
+        .subtitle {
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+        }
     }
 }
 
